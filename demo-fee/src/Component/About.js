@@ -4,7 +4,7 @@ function About() {
     return (
         //JSX file--> JS and HTML
         <>
-            {/* <h1 style={{ color: 'red' }}> About component</h1> */}
+            <h1 style={{ color: 'red' }}> About component</h1>
         </>
 // CTRl+/
     );

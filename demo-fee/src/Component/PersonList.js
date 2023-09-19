@@ -3,10 +3,10 @@ import axios from 'axios';
 
 export default class PersonList extends React.Component {
   state = {
-    persons: []
+    persons: []//array--> map {key value pair}
   }
 
-  componentDidMount() {//only once
+  componentDidMount() {//only once load the comp to the axios layer
     console.log("axios comp mount called");
     axios.get(`https://jsonplaceholder.typicode.com/users`)
       .then(res => {

@@ -2,8 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 function EffectsDemoNoDependency() {
   const [title, setTitle] = useState("default title");
   const titleRef = useRef();// uncontrolled input field
-  useEffect(() => {
-    console.log("useEffect");
+
+  useEffect(() => {//hook  useContext
+    console.log("useEffect");//== to compDidMount and compdidupdate
     // this useEffect is called after every render.
     document.title = title;
   });
